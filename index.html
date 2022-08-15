@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>taking user input </h1>
+
+    <form onSubmit="doSum (); return false">
+        num1: <input id="num1 " type="number " required>
+        <br> num2: <input id="num2 " type="number " required>
+        <br>
+        <button type="submit ">+</button>
+
+    </form>
+
+
+    <form onSubmit="doSub (); return false">
+        <button type="submit">-</button>
+
+    </form>
+
+    <form onSubmit="doMul (); return false">
+        <button type="submit ">*</button>
+
+    </form>
+
+    <form onSubmit="doDiv (); return false">
+        <button type="submit ">/</button>
+
+    </form>
+
+    <h3 id="result"> </h3>
+
+
+
+
+    <script>
+        function doSum() {
+            let firstNumber = (document.querySelector("#num1").value)
+            let secondNumber = (document.querySelector("#num2").value)
+
+            console.log(firstNumber, secondNumber);
+
+
+            let Sum = firstNumber + secondNumber
+            document.querySelector("#result").innerHTML = Sum;
+
+        }
+    </script>
+
+
+
+
+    <script>
+        function doSub() {
+            let firstNumber = (document.querySelector("#num1").value)
+            let secondNumber = (document.querySelector("#num2").value
+
+                console.log(firstNumber, secondNumber);
+
+                let Sub = firstNumber - secondNumber
+                document.querySelector("#result").innerHTML
+
+            }
+    </script>
+
+
+
+
+    <script>
+        function doDiv() {
+            let firstNumber = (document.querySelector("#num1").value)
+            let secondNumber = (document.querySelector("#num2").value)
+
+            console.log(firstNumber, secondNumber);
+
+            let Div = firstNumber / secondNumber
+            document.querySelector("#result").innerHTML
+
+        }
+    </script>
+
+
+
+
+    <script>
+        function doMul() {
+            let firstNumber = (document.querySelector("#num1").value)
+            let secondNumber = (document.querySelector("#num2").value)
+
+            console.log(firstNumber, secondNumber);
+
+            let Miv = firstNumber * secondNumber
+            document.querySelector("#result").innerHTML
+
+
+        }
+    </script>
+</body>
+
+
+</html>
